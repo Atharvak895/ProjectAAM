@@ -1,0 +1,142 @@
+/* about.css */
+
+/* CSS styles for the about page */
+
+/* Added CSS for responsive design */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .container {
+        width: 100%;
+    }
+
+    .about-images {
+        margin-left: 0;
+    }
+
+    .about-images img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+body {
+    background-color: #f5f5dc; /* Light Beige */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #343a40;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.about-images {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.about-images img {
+    position: absolute;
+    top: 0;
+    left: 50%; /* Align left edge of the image to the center */
+    transform: translateX(-50%); /* Move the image back by half of its width */
+    width: 33.33%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.8s;
+    text-align: center;
+    animation: imageFade 10s infinite; /* CSS animation */
+}
+
+.about-images img:not(:first-child) {
+    opacity: 0;
+}
+
+/* Footer styles, if any */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    clear: both;
+}
+
+/* CSS animation for image fading */
+@keyframes imageFade {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

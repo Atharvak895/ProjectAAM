@@ -1,0 +1,142 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 32px;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .menu {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .menu h2 {
+            margin-top: 0;
+            color: #343a40;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        .menu ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #dee2e6;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu ul li label {
+            flex: 1;
+        }
+
+        .menu ul li input[type="number"] {
+            width: 50px;
+            text-align: center;
+        }
+
+        .menu ul li input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            clear: both;
+        }
+
+        .submit-btn {
+            background-color: #ffc107;
+            color: #343a40;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background-color: #ffdb6d;
+        }
+
+        .disabled {
+            background-color: #f8f9fa;
+            color: #ccc;
+        }
+
+        .disabled input {
+            background-color: #f8f9fa;
+            cursor: not-allowed;
+        }
+
+        .payment {
+            margin-left: 10px;
+        }
+
+        #finalTotal {
+            font-size: 20px;
+            margin-top: 10px;
+            color: green;
+        }
